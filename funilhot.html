@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Acesso Privado</title>
+<style>
+:root{--bg:#09090b;--card:#121216;--card2:#17171c;--text:#f7f7f8;--muted:#a3a3ad;--line:#292930;--accent:#ff4f87;--accent2:#ff7aa6;--ok:#54d49a}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} button{font:inherit}
+.root{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 16px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 0%,#321322 0,transparent 38%),var(--bg)}
+.glow{position:absolute;width:360px;height:360px;border-radius:50%;background:#ff2f7620;filter:blur(90px);top:-140px;left:50%;transform:translateX(-50%)}
+.wrap{width:min(100%,520px);position:relative;z-index:1}.brand{text-align:center;margin-bottom:22px}.brand-mark{width:42px;height:42px;border:1px solid #ffffff22;border-radius:14px;display:grid;place-items:center;margin:0 auto 12px;background:#ffffff08;color:var(--accent);font-weight:800}.brand small{color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-size:10px}.brand h1{font-size:30px;line-height:1.05;margin:8px 0 8px;letter-spacing:-.04em}.brand p{margin:0;color:var(--muted);font-size:14px}
+.card{background:linear-gradient(180deg,#16161b,#101014);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 24px 80px #00000070}.progress{display:flex;gap:6px;margin-bottom:24px}.bar{height:4px;border-radius:9px;background:#29292f;flex:1}.bar.active{background:var(--accent)}.step{display:none;animation:up .28s ease}.step.active{display:block}@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.eyebrow{font-size:11px;color:var(--accent2);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:9px}.step h2{font-size:24px;margin:0 0 8px;letter-spacing:-.03em}.sub{color:var(--muted);font-size:14px;line-height:1.55;margin:0 0 20px}.options{display:grid;gap:10px}.opt{width:100%;border:1px solid var(--line);background:var(--card2);color:var(--text);border-radius:15px;padding:15px;text-align:left;cursor:pointer;transition:.2s;display:flex;justify-content:space-between;align-items:center}.opt:hover{border-color:#ff4f8766;transform:translateY(-1px)}.opt strong{font-size:14px}.opt span{color:var(--muted);font-size:12px}.input{width:100%;border:1px solid var(--line);background:#0d0d10;color:var(--text);border-radius:14px;padding:14px;outline:none;margin-bottom:10px}.input:focus{border-color:#ff4f8799}.cta{width:100%;border:0;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;font-weight:800;border-radius:15px;padding:15px;cursor:pointer;box-shadow:0 10px 30px #ff4f8730}.copy-link{width:100%;border:1px solid var(--line);background:transparent;color:var(--muted);font-weight:700;border-radius:15px;padding:13px;cursor:pointer;margin-top:10px}.copy-link:hover{border-color:#ff4f8766;color:var(--text)}.back{background:none;border:0;color:var(--muted);cursor:pointer;margin-top:13px;width:100%;font-size:12px}.note{display:flex;gap:8px;align-items:flex-start;margin-top:18px;color:#888893;font-size:11px;line-height:1.45}.note b{color:#bdbdc5}.footer{text-align:center;color:#686871;font-size:10px;margin-top:15px}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid #ffffff12;background:#ffffff06;border-radius:99px;padding:7px 10px;color:#a9a9b1;font-size:11px;margin-bottom:16px}.dot{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok)}
+@media(max-width:420px){.card{padding:20px;border-radius:20px}.brand h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="root"><div class="glow"></div><main class="wrap">
+<header class="brand"><h1>Encontre o acesso ideal para você</h1><p>Responda 3 perguntas rápidas e veja o próximo passo.</p></header>
+<section class="card">
+
+<div class="progress"><div class="bar active"></div><div class="bar"></div><div class="bar"></div></div>
+<div class="step active" data-step="1"><div class="eyebrow">01 · Intenção</div><h2>O que você procura?</h2><p class="sub">Isso ajuda a direcionar você para a opção correta.</p><div class="options"><button class="opt" data-value="Comprar"><strong>Quero comprar agora</strong><span>→</span></button><button class="opt" data-value="Conhecer"><strong>Quero escolher meu plano</strong><span>→</span></button><button class="opt" data-value="Duvida"><strong>Quero garantir meu acesso</strong><span>→</span></button></div></div>
+<div class="step" data-step="2"><div class="eyebrow">02 · Perfil</div><h2>Qual opção combina com você?</h2><p class="sub">Escolha uma alternativa para personalizarmos o atendimento.</p><div class="options"><button class="opt" data-value="Acesso individual"><strong>Acesso individual</strong><span>→</span></button><button class="opt" data-value="Quero saber os planos"><strong>Quero saber os planos</strong><span>→</span></button><button class="opt" data-value="Ainda estou decidindo"><strong>Ainda estou decidindo</strong><span>→</span></button></div></div>
+<div class="step" data-step="3"><div class="eyebrow">03 · Contato</div><h2>Pronto para continuar?</h2><p class="sub">Clique no botão abaixo para falar conosco pelo Telegram.</p><button class="cta" id="finish">Ir para o Telegram</button><button class="cta" id="copyLink" style="margin-top:10px;background:transparent;border:1px solid var(--line);color:var(--muted)">Copiar link</button><button class="copy-link" id="copyLink">Copiar link</button></div>
+</section>
+</main></div>
+<script>
+const TELEGRAM_URL='https://t.me/anassantos_bot';
+let step=1, intent='', profile=''; const steps=[...document.querySelectorAll('.step')], bars=[...document.querySelectorAll('.bar')];
+function show(n){step=n;steps.forEach((s,i)=>s.classList.toggle('active',i===n-1));bars.forEach((b,i)=>b.classList.toggle('active',i<n));}
+document.querySelectorAll('.step[data-step="1"] .opt').forEach(b=>b.onclick=()=>{intent=b.dataset.value;show(3)});
+document.querySelectorAll('.step[data-step="2"] .opt').forEach(b=>b.onclick=()=>{profile=b.dataset.value;show(3)});
+document.querySelectorAll('.back').forEach(b=>b.onclick=()=>show(Math.max(1,step-1)));
+document.getElementById('finish').onclick=()=>{const msg=encodeURIComponent(`Olá! Vim pelo acesso privado. Intenção: ${intent}.`);window.location.href=TELEGRAM_URL+'?text=' + msg};
+document.getElementById('copyLink').onclick=async()=>{const b=document.getElementById('copyLink');try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(TELEGRAM_URL)}else{const t=document.createElement('textarea');t.value=TELEGRAM_URL;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}b.textContent='Link copiado';setTimeout(()=>b.textContent='Copiar link',1800)}catch(e){b.textContent='Não foi possível copiar';setTimeout(()=>b.textContent='Copiar link',1800)}};
+</script>
+</body></html>
